@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #000;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 145px;
+    width: 100%; 
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    gap: 50px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 99;
+}
+#nav img{
+      height: 80px;
+      padding-left: 30px;
+ }
+ #nav h1{
+    padding-right:80px;
+    color: #000;
+ }
+ #nav h4{
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#000;
+    white-space: nowrap;
+}
+#mainimg{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.3;
+}
+#page1{
+    height:100vh;
+    width:100%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index:10;
+}
+#page1 h1{
+    font-size: 80px;
+    font-weight: 900;
+    color: rgba(17, 0, 255, 0.804);
+    position: relative;
+}
+#page1 h1::before{
+    content: "Welcome to MedPredict Suite";
+    position: absolute;
+    color: wheat;
+    top: -5px;
+    left: -3px;
+    z-index: -1;
+    -webkit-text-stroke: 2px #95C11F;
+
+}
+#page1 p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+}
+#page2{
+    height:100vh;
+    width: 100%;
+    /* background-color: red; */
+     z-index:10;
+}
+#about-us{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display:flex;
+    padding: 0 50px;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-around;
+}
+#about-us img{
+    height:200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+#about-us-in{
+    width:50%;
+    text-align: center;
+}
+#about-us-in h3{
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+#about-us-in para{
+    font-size: 15px;
+    line-height: 50px;
+}
+#cards-container{
+    /* background-color: red; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    gap: 70px;
+}
+.card{
+  height:90%;
+  width:24%;
+  /* background-color: blue; */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6;
+}
+#card1{
+    background-image: url("Heart-disease.jpg");
+}
+#card2{
+    background-image: url("diabetes-image.jpg");
+}
+#card3{
+    background-image: url("Predicting-Liver-Disease.jpg");
+}
+.overlay{
+    height:100%;
+    width:100%;
+    background-color: #98e8fa;
+    padding: 30px;
+    padding-top: 50px;
+    opacity: 0;
+    transition: all ease 0.6;
+}
+.overlay h4{
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+.overlay p{
+    color: #000;
+    font-size: 16px;
+    /* font-weight: 600; */
+    
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    transform: rotate3d(-1,1,0,20deg);
+}
+#page3{
+    height:8vh;
+    width: 100%;
+    background-color: black;
+}
+#page3 h4{
+    color: #fff;
+    padding-top: 27px;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+#top h2{
+   font-size: 30px;
+   font-weight: 600;
+   text-align: center;
+   line-height: 50px ;
+} 
+#heart{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.6;
+}
+#form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1,1,1,0.6);
+    background-color: #fff;
+}
+#form-container h2{
+     text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group input[type="submit"] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+#g1{
+    display:flex;
+    gap: 5px;
+}
+#c1{
+    display:flex;
+    gap: 5px;
+}
+#g2{
+    display:flex;
+    gap: 5px;
+}
+#s1{
+    display:flex;
+    gap: 5px;
+}
+#al{
+    display:flex;
+    gap: 5px;
+}
+#ac{
+    display:flex;
+    gap: 5px;
+}
+#heart1{
+    text-decoration: none;
+}
+#heart1:hover{
+    text-decoration: underline;
+}
+#diabetes1{
+    text-decoration: none;
+}
+#diabetes1:hover{
+    text-decoration: underline;
+}
+#top1 h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px ;
+ } 
+ #diabetes{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.6;
+}
+#form1 {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1,1,1,0.6);
+    background-color: #fff;
+}
+#form1 h2{
+    text-align: center;
+}
+#liver1{
+    text-decoration: none;
+}
+#liver1:hover{
+    text-decoration: underline;
+}
+#top2 h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px ;
+ } 
+ #liver{
+     height:100%;
+     width:100%;
+     object-fit: cover;
+     position: fixed;
+     z-index: -1;
+     opacity: 0.6;
+ }
+ #form2 {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1,1,1,0.6);
+    background-color: #fff;
+}
+#form2 h2{
+    text-align: center;
+}

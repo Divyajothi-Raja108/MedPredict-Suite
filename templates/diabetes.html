@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="top1">
+        <img  id= "diabetes" src="{%static 'diabetes-image.jpg' %}" alt="">
+        <h2>Diabetes Prediction</h2>
+    </div>
+    <div id="form1">
+        <h2>Enter the details</h2>
+        <form action="submit1">
+            <div class="form-group">
+            <div id=g1>
+            <label for="gender">Gender:<p>(0-Female , 1-Male)</p></label></div>
+            <input type="number" id="gender" name="gender" required>
+            </div>
+
+            <div class="form-group">
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+            <label for="hypertension">Hypertension:(1 for Yes, 0 for No)</label>
+            <input type="number" id="hypertension" name="hypertension" min="0" max="1" required>
+            </div>
+
+            <div class="form-group">
+            <label for="heart_disease">Heart Disease: (1 for Yes, 0 for No  )</label>
+            <input type="number" id="heart_disease" name="heart_disease" min="0" max="1" required>
+            </div>
+
+            <div class="form-group">
+            <label for="smoking_history">Smoking History: (0 for No Info, 1 for current, 2 for ever, 3 for former, 4 for never, 5 for not current )</label>
+            <input type="number" id="smoking_history" name="smoking_history" min="0" max="5" required>
+            </div>
+
+            <div class="form-group">
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" step="0.01" required>
+             </div>
+
+             <div class="form-group">
+            <label for="hba1c_level">Hemoglobin A1c Level:</label><br>
+            <input type="number" id="hba1c_level" name="hba1c_level" step="0.1" required>
+             </div>
+
+             <div class="form-group">
+            <label for="blood_glucose_level">Blood Glucose Level:</label><br>
+            <input type="number" id="blood_glucose_level" name="blood_glucose_level" required>
+             </div>
+
+             <div class="form-group submit-container">
+            <input type="submit" value="PREDICT">
+             </div>
+          </form>
+        <div class="form-group">
+            <h2>{{result2}}
+        </div>
+    </div>
+</body>
+</html>

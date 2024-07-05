@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="top">
+        <img  id= "heart" src="{%static 'Heart-disease.jpg' %}" alt="">
+        <h2>Heart Disease Prediction</h2>
+    </div>
+    <div id="form-container">
+        <h2>Enter the Details</h2>
+        <form action="submit">
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number"  name="age" required>
+      </div>
+      <div class="form-group">
+        <div id="g1">
+        <label for="gender">Gender</label>  <p>(1-Female , 2-Male)</p></div>
+        <input type="number" name="gender" min="1" max="2" required> 
+      </div>
+      <div class="form-group">
+        <label for="height">Height</label>
+        <input type="number" name="height" min="55" max="250" required>
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight</label>
+        <input type="number" name="weight" step="0.1" required>
+      </div>
+      <div class="form-group">
+        <label for="systole">Systolic Blood Pressure</label>
+        <input type="number" name="systole" required>
+      </div>
+      <div class="form-group">
+        <label for="diastole">Diastolic Blood Pressure</label>
+        <input type="number" name="diastole" required>
+      </div>
+      <div class="form-group">
+        <div id="c1">
+        <label for="chol">Cholesterol level</label>
+       <p>(1: normal, 2: above normal, 3: well above normal)</p>
+    </div>
+    <input type="number" name="chol" min="1" max="3" required>
+   </div>
+      <div class="form-group">
+        <div id="g2">
+       <label for="glu">Glucose level</label><p>(1: normal, 2: above normal, 3: well above normal)</p>
+    </div>
+    <input type="number" name="glu" min="1" max="3" required>
+      </div>
+      <div class="form-group">
+        <div id="s1">
+        <label for="smoke">Do you Smoke?</label>  <p>(0: Do not smoke, 1: smoke)</p>
+        </div>
+        <input type="number" name="smoke"  min="0" max="1" required>
+     
+      </div>
+      <div class="form-group">
+        <div id="al">
+            <label for="alc">Do you Consume Alcohol</label>  <p>(0: No, 1: Yes)</p>
+            </div>
+            <input type="number" name="alc"  min="0" max="1" required>
+      </div>
+      <div class="form-group">
+        <div id="ac">
+            <label for="act">Physical Activity</label>  <p>(0: No, 1: Yes)</p>
+            </div>
+            <input type="number" name="act"  min="0" max="1" required>
+      </div>
+      <div class="form-group submit-container">
+        <input type="submit" value="PREDICT" class="submit-button">
+    </div>
+</form>
+<div class="form-group">
+  <h2>{{result}}</h2>
+</div>
+    </div>
+</body>
+</html>
