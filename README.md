@@ -30,7 +30,11 @@ MedPredict Suite is a machine learning application that predicts the likelihood 
 ## Project Demo
 
 [![Watch the video](![Project-img1](https://github.com/Divyajothi-Raja108/MedPredict-Suite/assets/171944205/e3ff2634-9eb5-467f-812b-b8c896702026)
-)](https://github.com/Divyajothi-Raja108/MedPredict-Suite/assets/171944205/c57d33ee-163c-47f8-8296-5f234b1dd206)
+)](https://github.com/Divyajothi-Raja108/MedPredict-Suite/assets/171944205/07b2a493-9a06-4608-91a6-f92efc76edf3)
+
+
+
+
 
 
 
